@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Table + Detail View</title>
+  
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+
+  
+</head>
+
+<body>
+
+<div class="table_body">
+  <h1>
+  Movimientos 2021
+</h1>
+
+
+<div class="table_main">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Orden
+        </th>
+        <th>
+          Fecha
+        </th>
+        <th>
+          Beneficiario
+        </th>
+        <th>
+          Monto
+        </th>
+        <th>
+          Mas detalle
+        </th>
+      </tr>
+    </thead>
+   <!-- <tfoot>
+      <tr>
+        <th colspan='5'>
+          Enero
+        </th>
+      </tr>
+    </tfoot> -->
+    <tbody>
+      <tr>
+        <td data-title='Orden'>
+          00052801
+        </td>
+        <td data-title='Fecha'>
+          05/Feb/2021
+        </td>
+        <td data-title='Beneficiario'>
+          Christoph Koller
+        </td>
+        <td data-title='Monto'>
+          $100.000
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Ver
+          </a>
+        </td>
+      </tr>
+
+       <tr>
+        <td data-title='Orden'>
+          00052801
+        </td>
+        <td data-title='Fecha'>
+          05/Feb/2021
+        </td>
+        <td data-title='Beneficiario'>
+          Christoph Koller
+        </td>
+        <td data-title='Monto'>
+          $100.000
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Ver
+          </a>
+        </td>
+      </tr> <tr>
+        <td data-title='Orden'>
+          00052801
+        </td>
+        <td data-title='Fecha'>
+          05/Feb/2021
+        </td>
+        <td data-title='Beneficiario'>
+          Christoph Koller
+        </td>
+        <td data-title='Monto'>
+          $100.000
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Ver
+          </a>
+        </td>
+      </tr> <tr>
+        <td data-title='Orden'>
+          00052801
+        </td>
+        <td data-title='Fecha'>
+          05/Feb/2021
+        </td>
+        <td data-title='Beneficiario'>
+          Christoph Koller
+        </td>
+        <td data-title='Monto'>
+          $100.000
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Ver
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class='detail'>
+    <div class='detail-container'>
+      <dl>
+        <dt>
+          Orden
+        </dt>
+        <dd>
+          00052801
+        </dd>
+        <dt>
+          Fecha
+        </dt>
+        <dd>
+          05/Feb/2021
+        </dd>
+        <dt>
+          Beneficiario
+        </dt>
+        <dd>
+          Christoph Koller
+        </dd>
+        <dt>
+          Monto
+        </dt>
+        <dd>
+          $100.000
+        </dd>
+        <dt>
+          Cuenta
+        </dt>
+        <dd>
+          Banco: Banesco<br>
+          Tipo de cuenta: Ahorro<br>
+          N&uacute;mero de cuenta: 010455889541002211<br>
+          Documento: Cedula de identidad 15034888<br>
+          Monto recibido: Bs. 48.000.000
+        </dd>
+        <dt>
+          Nota
+        </dt>
+        <dd>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+        </dd>
+
+        <dt>
+          Recibo
+        </dt>
+        <dd>
+          <a class='button' href='#'>
+            Descargar
+          </a>
+        </dd>
+
+      </dl>
+    </div>
+    <div class='detail-nav'>
+      <button class='close'>
+        Close
+      </button>
+    </div>
+  </div>
+
+</div>
+</div>
+ 
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollzer.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+    <!-- <script src="js/index.js"></script> -->
+    <script type="text/javascript">
+      $('.button, .close').on('click', function(e) {
+      e.preventDefault();
+      $('.detail, html, body').toggleClass('open');
+      });
+    </script>
+
+</body>
+</html>
