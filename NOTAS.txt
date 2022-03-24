@@ -1,0 +1,42 @@
+$name_type_load = 0;
+$name_load = "";
+$doc_type_load = 0;
+$doc_num_load = "";
+$bank_load = 0;
+$acc_type_load = 0;
+$acc_num_load = "";
+$comment_load = "";
+
+1 BanCaribe
+2 Banco Activo
+3 Banco Bicentenario
+4 Banco de Venezuela
+5 Banco del Tesoro
+6 Banco Exterior
+7 Banco Mercantil
+8 Banco Nacional de Crédito BNC
+9 Banco Plaza
+10 Banco Sofitasa
+11 Banesco
+12 BBVA Provincial
+
+tipopersona
+name
+tipodocumento
+documento
+banco
+tipodecuenta
+cuenta
+monto
+comentario
+
+1	id				int(11)
+2	user_email		varchar(128)
+3	name_type		tinyint(4)
+4	name			varchar(128)
+5	doc_type		tinyint(4)
+6	doc_number		varchar(64)
+7	bank			tinyint(4)
+8	acc_type		tinyint(4)
+9	acc_number		int(11)
+10	comentario		varchar(4096)
